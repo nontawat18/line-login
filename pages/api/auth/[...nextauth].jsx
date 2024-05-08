@@ -4,10 +4,11 @@ import LineProvider from "next-auth/providers/line";
 export const authOptions = {
   providers: [
     LineProvider({
-      clientId: 2004859298,
-      clientSecret: '1fb482411e5a0c4d216e297a9db76baf',
+      clientId: process.env.LINE_CLIENT_ID,
+      clientSecret: process.env.LINE_CLIENT_SECRET,
     }),
   ],
+  secret: process.env.SECRET,
   callbacks: {
     async jwt({ token, account }) {
       if (account) {
