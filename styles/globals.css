@@ -30,7 +30,7 @@ body {
     background-color: white;
     padding: 50px;
     border-radius: 25px;
-    min-width: 400px;
+    min-width: 380px;
     min-height: 500px;
     color: black;
 }
@@ -47,7 +47,7 @@ body {
     background-color: white;
     padding: 30px;
     border-radius: 25px;
-    min-width: 400px;
+    min-width: 380px;
     max-width: 600px;
     min-height: 400px;
     color: black;
